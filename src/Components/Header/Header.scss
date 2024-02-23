@@ -1,0 +1,27 @@
+#header-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    top: 0px;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    #header-left-part {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #868686;
+    }
+
+    #header-right-part {
+        img {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
