@@ -10,7 +10,7 @@ const Header = () => {
             </div>
 
             <div id="header-right-part">
-               <img src={ExxonLogo} />
+               <img src={ExxonLogo} alt='ExxonLogo' />
             </div>
         </div>
     )
