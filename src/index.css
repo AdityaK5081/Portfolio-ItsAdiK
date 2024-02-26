@@ -14,8 +14,23 @@ code {
     monospace;
 }
 
+.horiz-height{
+    height: 5rem;
+}
+
 .neumorphic {
   box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
     -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
   overflow: hidden;
+}
+.neumorphic--pressed {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.variation1 {
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
 }
