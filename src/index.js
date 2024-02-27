@@ -8,6 +8,7 @@ import Timelines from './Components/Timelines/Timelines';
 import Certifications from './Components/Certifications/Certifications';
 import Extras from './Components/Extras/Extras';
 import ContactMe from './Components/ContactMe/ContactMe'
+import Projects from './Components/Projects/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,8 @@ root.render(
     <Skills />
     <div className='horiz-height'></div>
     <Timelines />
+    <div className='horiz-height'></div>
+    <Projects />
     <div className='horiz-height'></div>
     <Certifications />
     <div className='horiz-height'></div>
