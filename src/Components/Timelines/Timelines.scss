@@ -1,87 +1,61 @@
 #timelines-container {
     display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 
-        div {
-            margin: 15px;
-        }
+    div {
+        margin: 15px;
+    }
+
     #timelines-parent {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 }
 
-#education-container {
+.parent-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-    #education-card {
-        height: 160px;
+    .card-title {
         display: flex;
-        margin: 20px;
-        flex-direction: row;
-        align-items: center;
+        width: 100%;
         justify-content: center;
-        background-color: yellow;
-
-        img {
-            height: 150px;
-        }
-
-        #details {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 20px;
-
-            p {
-                margin: 3px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-
-            #dateTime {
-                color: red;
-                font-weight: bold;
-            }
-        }
     }
-}
 
-
-#work-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
-
-    #work-card {
-        height: 160px;
+    .card {
         display: flex;
-        margin: 20px;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin: 30px;
+        flex-direction: row;
         background-color: yellow;
-
+        border-radius: 20px;
+       
         img {
-            height: 50px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            width: 120px;
+            height: 120px;
         }
 
         #details {
             display: flex;
+            align-items: flex-start;
+            justify-content: center;
             flex-direction: column;
-            justify-content: space-around;
-            padding-left: 20px;
+            padding: 10px;
 
             p {
                 margin: 3px;

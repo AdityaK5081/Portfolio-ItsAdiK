@@ -19,14 +19,15 @@ const Works = [
     { id: 3, image: ProgradLogo, dateTime: '2021 (Nov) - 2022 (Apr)', p1: 'Front End Web Developer - Prograd Training Program', p2: '', p3: 'Trainings included: React.JS, HTML, CSS, JavaScript' },
     { id: 4, image: GEVLogo, dateTime: '2021 (Jun) - 2022 (Sep)', p1: 'Flutter Developer - Intern', p2: 'Worked on Govardhan Ecovillage project', p3: 'Tech. stack: Flutter, Dart, Web-services, Rest APIs and JSON' },
 ]
+// ----> combine work & edu styles of card into one
 
 const Education = () => {
     return (
-        <div id='education-container'>
-            <div>My Education</div>
+        <div className='parent-container'>
+            <div className='card-title'>My Education</div>
             {
                 Educations.map((edu) => {
-                    return <div id='education-card' key={edu.id}>
+                    return <div className='card' key={edu.id}>
                         <img src={edu.image} alt='pic' />
                         <div id='details'>
                             <p id='dateTime'>{edu.dateTime}</p>
@@ -43,11 +44,11 @@ const Education = () => {
 
 const WorkExperience = () => {
     return (
-        <div id='work-container'>
-            <div>My Work Experience</div>
+        <div className='parent-container'>
+            <div className='card-title'>My Work Experience</div>
             {
                 Works.map((work) => {
-                    return <div id='work-card' key={work.id}>
+                    return <div className='card' key={work.id}>
                         <img src={work.image} alt='pic' />
                         <div id='details'>
                             <p id='dateTime'>{work.dateTime}</p>
